@@ -26,6 +26,7 @@ part 'core/base/lat_lng.dart';
 part 'core/base/lat_lng_bounds.dart';
 part 'core/base/point.dart';
 part 'core/base/size.dart';
+part 'core/base/padding.dart';
 part 'core/controls/control_position.dart';
 part 'core/controls/fullscreen_control_options.dart';
 part 'core/controls/map_type_control_options.dart';

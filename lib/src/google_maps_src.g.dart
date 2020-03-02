@@ -2080,8 +2080,8 @@ class GMap extends MVCObject {
             [mapDiv, __codec48.encode(opts)]));
   GMap.created(JsObject o) : super.created(o);
 
-  void fitBounds(LatLngBounds bounds) {
-    asJsObject(this).callMethod('fitBounds', [__codec1.encode(bounds)]);
+  void fitBounds(LatLngBounds bounds, [Padding padding]) {
+    asJsObject(this).callMethod('fitBounds', [__codec1.encode(bounds), if(padding != null) paddingCodec.encode(padding)]);
   }
 
   LatLngBounds get bounds => _getBounds();
@@ -2126,8 +2126,8 @@ class GMap extends MVCObject {
     asJsObject(this).callMethod('panTo', [__codec0.encode(latLng)]);
   }
 
-  void panToBounds(LatLngBounds latLngBounds) {
-    asJsObject(this).callMethod('panToBounds', [__codec1.encode(latLngBounds)]);
+  void panToBounds(LatLngBounds latLngBounds, [Padding padding]) {
+    asJsObject(this).callMethod('panToBounds', [__codec1.encode(latLngBounds), if(padding != null) paddingCodec.encode(padding)]);
   }
 
   set center(LatLng latlng) => _setCenter(latlng);

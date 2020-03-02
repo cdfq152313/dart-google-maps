@@ -6,7 +6,7 @@ description: >
   scripts.
 homepage: https://github.com/a14n/dart-google-maps
 environment:
-  sdk: '>=2.0.0-dev.67.0 <3.0.0'
+  sdk: '>=2.3.0 <3.0.0'
 dependencies:
   js_wrapping: ^0.5.0
   meta: ^1.1.2
